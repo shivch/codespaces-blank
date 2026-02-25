@@ -18,6 +18,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Build with Maven
-      run: mvn -B package --file DemoAnnotationSpring/pom.xml
+      run: mvn clean install
     - name: Run tests
       run: mvn test --file DemoAnnotationSpring/pom.xml
